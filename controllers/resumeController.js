@@ -32,7 +32,7 @@ const parseResume = async (req, res, next) => {
     }
 
     res.json(parsedData);
-  } catch (error) {
+  } catch (error) { 
     next(error);
   }
 };
