@@ -13,7 +13,7 @@ const parseResumeText = (rawText) => {
   const text = normalizeText(rawText);
   const sections = detectSections(text);
 
-  const getSectionText = (key) => (sections[key] ? sections[key] : "");
+  const getSectionText = (key) => (sections[key] ? sections[key] : ""); 
 
   const headerText = getSectionText("PERSONAL") || text.substring(0, 1000);
   

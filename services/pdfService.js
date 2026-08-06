@@ -66,4 +66,4 @@ const extractTextFromPDF = async (pdfBuffer) => {
 
 module.exports = {
   extractTextFromPDF,
-};
+}; 
