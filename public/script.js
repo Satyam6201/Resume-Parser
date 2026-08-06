@@ -124,7 +124,6 @@ function syntaxHighlight(json) {
   });
 }
 
-// Buttons Logic
 copyBtn.addEventListener("click", () => {
   if (parsedData) {
     navigator.clipboard.writeText(JSON.stringify(parsedData, null, 2));
