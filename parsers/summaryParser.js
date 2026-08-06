@@ -4,7 +4,7 @@ const parseSummary = (summaryText) => {
     .replace(/^[•*\-▪◦➢>·]\s*/gm, "")
     .replace(/\s+/g, " ")
     .trim();
-};
+}; 
 
 module.exports = {
   parseSummary,
