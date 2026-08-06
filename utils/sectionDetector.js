@@ -13,7 +13,7 @@ const detectSection = (line) => {
   if (cleanLine.split(' ').length > 4) return null; // Headings are usually short
   if (cleanLine.endsWith('.')) return null; // Headers don't end in periods
   
-  // If the line is entirely lowercase, it's probably just a wrapped word from a sentence
+  // If the line is entirely lowercase, 
   if (cleanLine === cleanLine.toLowerCase() && cleanLine.match(/[a-z]/)) return null;
 
   for (const section of SECTION_MAPPING) {
@@ -28,7 +28,7 @@ const detectSections = (text) => {
   const lines = text.split('\n');
   const sections = {};
   
-  let currentSection = 'PERSONAL'; // Everything before first heading is usually personal/contact info
+  let currentSection = 'PERSONAL'; 
   let currentContent = [];
 
   for (let i = 0; i < lines.length; i++) {
@@ -58,4 +58,4 @@ const detectSections = (text) => {
 
 module.exports = {
   detectSections,
-};
+}; 

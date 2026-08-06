@@ -18,4 +18,4 @@ module.exports = {
   PHONE_REGEX,
   NAME_REGEX,
   CGPA_REGEX
-};
+}; 

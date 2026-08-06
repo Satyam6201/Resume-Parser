@@ -90,4 +90,4 @@ module.exports = {
   stripMatch,
   normalizeUrl,
   normalizePhone
-};
+}; 
