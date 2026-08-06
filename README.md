@@ -99,6 +99,3 @@ When you upload a resume, it goes through a strict pipeline to ensure data accur
 3. **Section Detection (`sectionDetector.js`):** We scan the document line-by-line looking for headers (like "PROFESSIONAL EXPERIENCE" or "EDUCATION"). Once a header is found, all text below it belongs strictly to that section until the next header appears.
 4. **Independent Parsing (`parsers/`):** The isolated text block for each section is sent to its specific parser. Because the parsers are separate, your "Experience" parser will never accidentally consume your "Projects" data!
 
----
-
-Enjoy parsing! 🎉
